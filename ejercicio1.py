@@ -1,7 +1,7 @@
 
 from itertools import combinations
 from datos import objetos_volumen as objetos,VOLUMEN_MAXIMO
-
+from time import perf_counter
 
 
 #Declaracion de los objetos usados en la parte I Y II
@@ -11,6 +11,7 @@ from datos import objetos_volumen as objetos,VOLUMEN_MAXIMO
 
 #EJERCICIO 1
 """Resolver el problema de la Mochila utilizando una búsqueda exhaustiva"""
+tiempo_inicio = perf_counter()
 combinaciones:[] = []
 for r in range(1, len(objetos) + 1):
     for comb in combinations(objetos, r):
@@ -26,16 +27,11 @@ for comb in combinaciones:
     if valor_total > valor_max:
         valor_max=valor_total
         comb_max =  comb
-
+tiempo_fin = perf_counter()
+duracion =tiempo_fin - tiempo_inicio
 volumen = sum(obj.volumen for obj in comb_max)
 
-print(f"combinacion maxima: {comb_max} -- valor: {valor_max} -- volumen: {volumen}")
+print(f"combinacion maxima: {comb_max} --\n valor: {valor_max} --\n volumen: {volumen} \n tiempo demorado: {duracion}")
 
 
-
-"""
-# PARTE 3
-
-
-"""
 
