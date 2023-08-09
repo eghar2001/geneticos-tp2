@@ -47,4 +47,4 @@ duracion_exhaustivo = tiempo_fin_greedy - tiempo_inicio_greedy
 valor_mochila = sum(obj.valor for obj in mochila)
 peso_mochila = sum(obj.peso for obj in mochila)
 print("BUSQUEDA GOLOSA")
-print(f"mochila:{mochila} -- valor: {valor_mochila} -- peso: {valor_mochila} \n tiempo demorado:{duracion_exhaustivo}")
+print(f"mochila:{mochila} -- valor: {valor_mochila} -- peso: {peso_mochila} \n tiempo demorado:{duracion_exhaustivo}")
