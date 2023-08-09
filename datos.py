@@ -11,10 +11,10 @@ objetos_volumen = [
    Objeto(volumen = 805,valor = 36),
    Objeto(volumen = 430,valor = 25),
    Objeto(volumen = 1200,valor = 64),
-   Objeto(volumen = 779,valor = 54),
+   Objeto(volumen = 770,valor = 54),
    Objeto(volumen = 60,valor = 18),
    Objeto(volumen = 930,valor = 46),
-   Objeto(volumen = 358,valor = 28),
+   Objeto(volumen = 353,valor = 28),
 ]
 
 objetos_peso = [
